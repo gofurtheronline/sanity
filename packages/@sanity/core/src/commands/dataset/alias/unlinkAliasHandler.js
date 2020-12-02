@@ -39,7 +39,7 @@ export default async (args, context) => {
 
     await prompt.single({
       type: 'input',
-      message: `This alias is linked to dataset <${linkedAlias.datasetName}>. Are you ABSOLUTELY sure you want to unlink this this dataset from the dataset alias?
+      message: `This alias is linked to dataset <${linkedAlias.datasetName}>. Are you ABSOLUTELY sure you want to unlink this dataset from the dataset alias?
         \n  Type YES/NO: `,
       filter: (input) => `${input}`.toLowerCase(),
       validate: (input) => {
